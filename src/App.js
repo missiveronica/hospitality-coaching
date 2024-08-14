@@ -1,11 +1,17 @@
 import './App.css';
-import ColorSchemesExample from './ColorSchemeExample';
+import NavGrid from './NavGrid';
+import cover from './cover.mp4';
 
 function App() {
   return (
     <div className="App">
-      <ColorSchemesExample/>
-
+      <NavGrid/>
+      <div>
+      <video autoplay muted loop>
+        <source src = {cover} type="video/mp4"/>      
+        </video>
+        <h1>Ready to the Plunge into Hospitality Career?</h1>
+        </div>
 
     </div>
   );
