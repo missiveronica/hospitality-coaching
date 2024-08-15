@@ -2,12 +2,11 @@ video {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    position: fixed;
     top:0;
     left:0;
     Z-index: -1;
 }
-h1 {
+.header {
 color: white;
 text-align: center;
 padding: 300px;
