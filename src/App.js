@@ -2,8 +2,16 @@ import About from './About';
 import './App.css';
 import NavGrid from './NavGrid';
 import cover from './cover.mp4';
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 
 function App() {
+  const container = useRef();
+  useGSAP(() => {
+      gsap.to (".header", {y:-400, duration: 5})
+  });
   return (
     <div className="App">
       <NavGrid/>
