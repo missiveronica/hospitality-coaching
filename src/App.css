@@ -36,10 +36,12 @@ opacity: 0.9;
     font-size: 20px;
     font-weight: bold;
 }
-button {
+.but {
     background-color: #CADABF;
     margin-top: 20px;
     padding: 20px;
+    border-color: grey;
+    ;
     
 }
 .quote {
@@ -63,4 +65,17 @@ h1, h2 {
 }   
 .qB {
     width: 1000px;
+}
+.teamContainer {
+    background-image: url(team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+h2 {
+    color: #fad149;
+    font-weight: bolder;
+}
+.logo {
+    color: #fad149;
 }

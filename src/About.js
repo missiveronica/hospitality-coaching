@@ -61,7 +61,7 @@ function About () {
         </blockquote>
       </Card.Body>
     </Card>
-           <button onClick={getQuote}>Get My Daily Motivation Now</button>
+           <button className="but" onClick={getQuote}>Get My Daily Motivation Now</button>
      </div>
         </div>
 

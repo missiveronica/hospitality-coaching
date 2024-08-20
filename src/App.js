@@ -4,6 +4,7 @@ import NavGrid from './NavGrid';
 import cover from './cover.mp4';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Team from './Team';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         </div>
         </section>
 <About/>
+<Team/>
 
 
 
