@@ -12,8 +12,8 @@ function NavGrid() {
           <Navbar.Brand href="#home">Hospitality Career Coaching</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href= "#about">About Us</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#team">Team</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
             <Nav.Link href="#bookNow">Book Now</Nav.Link>
           </Nav>
         </Container>

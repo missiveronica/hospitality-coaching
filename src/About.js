@@ -2,6 +2,15 @@ import React from "react";
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import image from './bell.png';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Slides from "./Slides";
+
+
+
 
 function About () {
 
@@ -19,9 +28,14 @@ function About () {
         const data = await response.json();
         setQuote(data.content)
     }
+
+    useGSAP(() => {
+        gsap.to (".bell", {rotation: 20, repeat:-1, duration: 3})
+    });
     return (
         <div>
         <section id ="about">
+            <div className="blockOne">
             <h2>WHO WE ARE</h2>
             <div data-aos="fade-right"
             data-aos-duration="2000"
@@ -31,11 +45,39 @@ function About () {
           <p className="title">Caring.</p>
           <p className="title">Committed.</p>
           </div>
-        </section>
-        <div>
-           <p >{quote}</p> 
+</div>
+       <div className="blockTwo">
+       <div>
+          <p className="titleTwo">Experts in Hospitality Industry with over 10 years of experience. You can rely on us.</p>
+          <img className="bell" src={image} alt ="bell"/>
+
+    </div>
+        <div className="qB">
+        <Card className="quote">
+      <Card.Header>Quote</Card.Header>
+      <Card.Body>
+        <blockquote className="blockquote mb-0">
+        <p>"{quote}"</p> 
+        </blockquote>
+      </Card.Body>
+    </Card>
            <button onClick={getQuote}>Get My Daily Motivation Now</button>
+     </div>
         </div>
+
+        <div>
+     <h3>Landing your Dreamjob couldn't be easier with our support! Which type of property are you up to?</h3>
+     </div>
+     <div className="slideBox">
+<Slides/>
+     </div>
+
+
+        </section>
+      
+        
+        <hr className="rounded"></hr>
+      
         </div>
 
     )
