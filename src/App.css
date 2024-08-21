@@ -1,3 +1,6 @@
+body {
+    background: #f3f2f0;
+}
 video {
     object-fit: cover;
     width: 100%;
@@ -15,7 +18,7 @@ color: white;
 position: absolute;
 }
 #home, .blockOne {
-    background-color: #CADABF;
+    background-color: #5f6063;
 }
 
 h2 {
@@ -23,7 +26,7 @@ h2 {
 }
 .title {
     font-size: 30px;
-    color: #4b4b4c;
+    color: #f3f2f0 ;
 }
 .navbar {
 opacity: 0.9;
@@ -78,4 +81,8 @@ h2 {
 }
 .logo {
     color: #fad149;
+}
+
+.teamText {
+    text-align: center;
 }
