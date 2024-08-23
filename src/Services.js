@@ -1,11 +1,11 @@
 import React from 'react';
-//import {
-  //BrowserRouter as Router,
-  //Routes,
-  //Route,
-  //Link
-//} from "react-router-dom";
-//import AllEncompassingPathway from './AllEncompassingPathway';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import AllEncompassingPathway from './AllEncompassingPathway';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
@@ -17,6 +17,16 @@ import pictureFour from './CardPictures/grass.avif';
 
 
 function Services () {
+
+  const newPageOne = () => {
+    <Router>
+        <Link to = '/firstPage'>
+        </Link>
+        <Routes>
+          <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
+        </Routes>
+        </Router>
+  }
     return(
         <div>
             <section id ="services">
@@ -27,7 +37,7 @@ function Services () {
 <div>
                 <CardGroup>
       <Card className="bg-dark text-white">
-        <Card.Img variant="top" src={pictureOne} alt="cardImage"/>
+        <Card.Img onClick={newPageOne} variant="top" src={pictureOne} alt="cardImage"/>
         <Card.ImgOverlay>
         <Card.Title>All-Encompassing Pathway</Card.Title> 
         </Card.ImgOverlay>
@@ -56,6 +66,7 @@ function Services () {
       </Card>
       <Card className="bg-dark text-white">
         <Card.Img variant="top" src={pictureThree} alt="cardImage"/>
+
         <Card.ImgOverlay>
         <Card.Title>One Of A Kind Pathway</Card.Title> 
         </Card.ImgOverlay>
