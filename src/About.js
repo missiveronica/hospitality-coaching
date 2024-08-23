@@ -66,7 +66,7 @@ function About () {
         </div>
 
         <div>
-     <h3>Landing your Dreamjob couldn't be easier with our support! Which type of property are you up to?</h3>
+     <h4>Landing your Dreamjob couldn't be easier with our support! Which type of property are you up to?</h4>
      </div>
      <div className="slideBox">
 <Slides/>

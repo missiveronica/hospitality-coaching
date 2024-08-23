@@ -5,6 +5,8 @@ import cover from './cover.mp4';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Team from './Team';
+import Services from './Services';
+import Booking from './Booking';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         </section>
 <About/>
 <Team/>
+<Services/>
+<Booking/>
 
 
 

@@ -1,6 +1,10 @@
 body {
     background: #f3f2f0;
 }
+.navbar {
+    opacity: 0.9;
+    background-color: #A7B99E;
+}
 video {
     object-fit: cover;
     width: 100%;
@@ -28,9 +32,7 @@ h2 {
     font-size: 30px;
     color: #f3f2f0 ;
 }
-.navbar {
-opacity: 0.9;
-}
+
 .blockTwo {
     display: flex;
     justify-content: space-around;
@@ -70,10 +72,24 @@ h1, h2 {
     width: 1000px;
 }
 .teamContainer {
-    background-image: url(team.jpg);
+    background-image: url(sectionImages/team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 250px;
+}
+.serviceContainer {
+    background-image: url(sectionImages/mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px; 
+}
+.bookingContainer {
+    background-image: url(sectionImages/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px; 
 }
 h2 {
     color: #fad149;
@@ -85,4 +101,20 @@ h2 {
 
 .teamText {
     text-align: center;
+}
+.teamCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.serviceCard {
+width: 100px;
+}
+.formBox {
+    padding: 20px;
+}
+.formFrame {
+    padding: 20px;
+    border: #5f6063;
+    border-style: double;
 }
