@@ -1,3 +1,4 @@
+import React from 'react';
 import About from './About';
 import './App.css';
 import NavGrid from './NavGrid';
@@ -7,12 +8,20 @@ import { useGSAP } from "@gsap/react";
 import Team from './Team';
 import Services from './Services';
 import Booking from './Booking';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import AllEncompassingPathway from './AllEncompassingPathway';
+
 
 
 function App() {
   useGSAP(() => {
       gsap.to (".header", {y:-400, duration: 7})
   });
+
   return (
     <div className="App">
       <NavGrid/>
@@ -30,6 +39,13 @@ function App() {
 <Team/>
 <Services/>
 <Booking/>
+<div>
+    <Router>
+        <Routes>
+          <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
+        </Routes>
+        </Router>
+  </div>
 
 
 

@@ -1,12 +1,6 @@
-import React from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
-import AllEncompassingPathway from './AllEncompassingPathway';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
@@ -18,15 +12,6 @@ import pictureFour from './CardPictures/grass.avif';
 
 function Services () {
 
-  const newPageOne = () => {
-    <Router>
-        <Link to = '/firstPage'>
-        </Link>
-        <Routes>
-          <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
-        </Routes>
-        </Router>
-  }
     return(
         <div>
             <section id ="services">
@@ -37,7 +22,9 @@ function Services () {
 <div>
                 <CardGroup>
       <Card className="bg-dark text-white">
-        <Card.Img onClick={newPageOne} variant="top" src={pictureOne} alt="cardImage"/>
+      <Link to = '/firstPage'>
+        <Card.Img variant="top" src={pictureOne} alt="cardImage"/>
+        </Link>
         <Card.ImgOverlay>
         <Card.Title>All-Encompassing Pathway</Card.Title> 
         </Card.ImgOverlay>
