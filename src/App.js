@@ -1,10 +1,6 @@
 import React from 'react';
 import About from './About';
 import './App.css';
-import NavGrid from './NavGrid';
-import cover from './cover.mp4';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import Team from './Team';
 import Services from './Services';
 import Booking from './Booking';
@@ -13,28 +9,18 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Home from './Home';
 import AllEncompassingPathway from './AllEncompassingPathway';
 
 
 
+
 function App() {
-  useGSAP(() => {
-      gsap.to (".header", {y:-400, duration: 7})
-  });
+ 
 
   return (
     <div className="App">
-      <NavGrid/>
-      <section id ="home">
-      <div>
-      <video autoPlay muted loop>
-        <source src = {cover} type="video/mp4"/>      
-        </video>
-        <div className='center'>
-        <h1 className='header'>Ready to take the Plunge into Hospitality Career?</h1>
-        </div>
-        </div>
-        </section>
+<Home/>     
 <About/>
 <Team/>
 <Services/>
@@ -46,9 +32,6 @@ function App() {
         </Routes>
         </Router>
   </div>
-
-
-
 
     </div>
   );
