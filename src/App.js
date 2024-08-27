@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import AllEncompassingPathway from './AllEncompassingPathway';
+import MainComponent from './MainComponent';
 
 
 
@@ -24,14 +25,13 @@ function App() {
 <About/>
 <Team/>
 <Services/>
-<Booking/>
-<div>
-    <Router>
+<Router>
         <Routes>
-          <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
-        </Routes>
-        </Router>
-  </div>
+          <Route path = '/firstPage' element = {<MainComponent/>}/>
+          </Routes>
+    </Router>
+<Booking/>
+
 
     </div>
   );
