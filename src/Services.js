@@ -1,4 +1,8 @@
+import React from 'react';
 import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
   Link
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,6 +12,7 @@ import pictureOne from './CardPictures/compass.jpg';
 import pictureTwo from './CardPictures/pathway.jpg';
 import pictureThree from './CardPictures/tree.jpg';
 import pictureFour from './CardPictures/grass.avif';
+import AllEncompassingPathway from './AllEncompassingPathway';
 
 
 function Services () {
@@ -22,9 +27,16 @@ function Services () {
 <div>
                 <CardGroup>
       <Card className="bg-dark text-white">
+       
+        <Router>
       <Link to = '/firstPage'>
         <Card.Img variant="top" src={pictureOne} alt="cardImage"/>
         </Link>
+        <Routes>
+<Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
+        </Routes>
+        </Router>
+      
         <Card.ImgOverlay>
         <Card.Title>All-Encompassing Pathway</Card.Title> 
         </Card.ImgOverlay>
