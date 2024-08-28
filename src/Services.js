@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +9,7 @@ import pictureOne from './CardPictures/compass.jpg';
 import pictureTwo from './CardPictures/pathway.jpg';
 import pictureThree from './CardPictures/tree.jpg';
 import pictureFour from './CardPictures/grass.avif';
-import AllEncompassingPathway from './AllEncompassingPathway';
+
 
 
 function Services () {
@@ -22,23 +19,18 @@ function Services () {
             <section id ="services">
                 <div className="serviceContainer">
                     <h2>YOUR JOURNEY WITH US</h2>
+                    
+
                 </div>
                 <h3>Let's start our Journey together...</h3>
 <div>
                 <CardGroup>
       <Card className="bg-dark text-white">
-       
-        <Router>
-      <Link to = '/firstPage'>
         <Card.Img variant="top" src={pictureOne} alt="cardImage"/>
-        </Link>
-        <Routes>
-<Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
-        </Routes>
-        </Router>
-      
         <Card.ImgOverlay>
+        <Link className='cardTitle' to = '/firstPage'>
         <Card.Title>All-Encompassing Pathway</Card.Title> 
+        </Link>
         </Card.ImgOverlay>
         <Card.Body>
           <Card.Text>
@@ -49,6 +41,8 @@ function Services () {
           <small className="text-white">Duration: 2 months</small>
         </Card.Footer>
       </Card>
+      
+
       <Card className="bg-dark text-white">
         <Card.Img variant="top" src={pictureTwo} alt="cardImage"/>
         <Card.ImgOverlay>

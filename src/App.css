@@ -25,9 +25,7 @@ position: absolute;
     background-color: #5f6063;
 }
 
-h2 {
-    padding: 20px;
-}
+
 .title {
     font-size: 30px;
     color: #f3f2f0 ;
@@ -46,7 +44,6 @@ h2 {
     margin-top: 20px;
     padding: 20px;
     border-color: grey;
-    ;
     
 }
 .quote {
@@ -65,7 +62,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
-h1, h2 {
+h1 {
     color: #4b4b4c;
 }   
 .qB {
@@ -94,7 +91,9 @@ h1, h2 {
 h2 {
     color: #fad149;
     font-weight: bolder;
+    padding: 20px;
 }
+
 .logo {
     color: #fad149;
 }
@@ -117,4 +116,8 @@ width: 100px;
     padding: 20px;
     border: #5f6063;
     border-style: double;
+}
+.cardTitle {
+    color: white;
+    text-decoration: none;
 }

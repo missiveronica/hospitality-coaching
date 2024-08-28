@@ -1,11 +1,12 @@
 import React from 'react';
-import About from './About';
 import './App.css';
-import Team from './Team';
-import Services from './Services';
-import Booking from './Booking';
 import Home from './Home';
-import NavGrid from './NavGrid';
+import {
+BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import AllEncompassingPathway from './AllEncompassingPathway';
 
 
 
@@ -16,13 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <NavGrid/>
-<Home/>     
-<About/>
-<Team/>
-<Services/>
-<Booking/>
-
+      <Router>
+      <Routes>
+      <Route path ="/" element ={<Home/>}/>
+      <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
+      </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,4 +1,9 @@
 import React from 'react';
+import NavGrid from './NavGrid';
+import About from './About';
+import Team from './Team';
+import Services from './Services';
+import Booking from './Booking';
 import cover from './cover.mp4';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -10,7 +15,8 @@ function Home () {
     });
     return (
         <div>
-      
+      <NavGrid/>
+
         <section id="home">
             <div>
                 <video autoPlay muted loop>
@@ -21,6 +27,10 @@ function Home () {
                 </div>
             </div>
         </section>
+<About/>
+<Team/>
+<Services/>
+<Booking/>
         </div>
 
     )
