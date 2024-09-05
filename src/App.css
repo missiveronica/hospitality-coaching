@@ -20,6 +20,9 @@ video {
 .header {
 color: white;
 position: absolute;
+font-family: "Montserrat", system-ui;
+
+
 }
 #home, .blockOne {
     background-color: #5f6063;
@@ -29,6 +32,9 @@ position: absolute;
 .title {
     font-size: 30px;
     color: #f3f2f0 ;
+    font-family: "Montserrat", system-ui;
+
+
 }
 
 .blockTwo {
@@ -38,33 +44,38 @@ position: absolute;
 .titleTwo {
     font-size: 20px;
     font-weight: bold;
+    font-family: "Montserrat", system-ui;
+
 }
 .but {
     background-color: #CADABF;
     margin-top: 20px;
     padding: 20px;
     border-color: grey;
-    
+    border-radius: 6%;
+    font-weight: bolder;
+    color: #5f6063;
+    font-family: "Montserrat", system-ui;
+
 }
 .quote {
     background: #FEFAE0;
     height: 150px;
+    font-family: "Montserrat", system-ui;
+
 }
 .rounded {
     border-top: 8px solid #AFC8AD;
   border-radius: 5px;
 }
 .slideFrame {
-    width: 800px;
+    width: 700px;
     height: 80%;
 }
 .slideBox {
     display: flex;
     justify-content: center;
-}
-h1 {
-    color: #4b4b4c;
-}   
+} 
 .qB {
     width: 1000px;
 }
@@ -73,13 +84,19 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
+    font-family: "Montserrat", system-ui;
+
 }
 .serviceContainer {
     background-image: url(sectionImages/mountains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px; 
+    height: 250px;
+    font-family: "Montserrat", system-ui;
+    font-family: "Montserrat", system-ui;
+
+
 }
 .bookingContainer {
     background-image: url(sectionImages/contact.jpg);
@@ -87,19 +104,28 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     height: 250px; 
+    font-family: "Montserrat", system-ui;
+
 }
-h2 {
+.subHeader {
     color: #fad149;
     font-weight: bolder;
     padding: 20px;
+    font-family: "Montserrat", system-ui;
 }
 
 .logo {
     color: #fad149;
+    font-family: "Playwrite CU", cursive;
+
 }
 
 .teamText {
     text-align: center;
+    font-family: "Montserrat", system-ui;
+
+  
+
 }
 .teamCards {
     display: flex;
@@ -111,6 +137,8 @@ width: 100px;
 }
 .formBox {
     padding: 20px;
+    font-family: "Montserrat", system-ui;
+
 }
 .formFrame {
     padding: 20px;
@@ -120,4 +148,73 @@ width: 100px;
 .cardTitle {
     color: white;
     text-decoration: none;
+}
+.box {
+    background-color: #fad149;
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+.cardText {
+    color: white;
+}
+.inputBox {
+    padding: 15px;
+    margin: 15px;
+    width: 400px;
+    background-color: white;
+    border-radius: 3%;
+    border: none;
+
+}
+.searchBtn {
+    border: none;
+    background-color: #A7B99E;
+    padding: 15px;
+    border-radius: 5%;
+    color: #5f6063;
+    font-weight: bolder;
+    font-family: "Montserrat", system-ui;
+
+}
+.searchBtn:hover {
+    opacity: 0.9;
+}
+.serviceBoxText {
+    font-family: "Montserrat", system-ui;
+    padding: 30px;
+}
+h3 {
+    font-family: "Montserrat", system-ui;
+}
+.slideText {
+    background-color: white;
+    opacity: 0.8;
+    color: #5f6063;
+    font-family: "Montserrat", system-ui;
+    font-weight: bolder;
+}
+.slideTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+
+    .slideFrame {
+        width: 400px;
+    }
+    html, body {
+overflow-x: hidden;
+}
+.inputBox {
+    width: 350px;
+    padding: 4px;
+}
+.searchBtn {
+margin: 30px;
+}
+
 }

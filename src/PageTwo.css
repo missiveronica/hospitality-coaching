@@ -1,0 +1,68 @@
+body {
+    background: #f3f2f0;
+}
+.secondPageBox {
+    background-image: url(CardPictures/pathway.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px; 
+    font-family: "Montserrat", system-ui;
+}
+.pageTitle {
+    color: #fad149;
+    font-weight: bolder;
+    padding: 20px;
+}
+.back {
+    background-color:#fad149;
+    border: none;
+    border-radius: 10%;
+    padding: 15px;
+    color: #4d4f54;
+    font-weight: bold;
+}
+.back:hover {
+    opacity: 0.8;
+}
+.pageCardOne, .pageCardTwo {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4d4f54 ;
+}
+
+.cluster {
+    display: flex;
+    justify-content: space-around;
+}
+.bookBtn {
+    background-color: #A7B99E;
+    border-radius: 10%;
+    padding: 15px;
+    border: none;
+    margin: 15px;
+    color: #4d4f54;
+    font-weight: bold;
+
+}
+.bookBtn:hover {
+    opacity: 0.8;
+}
+.pageText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    text-align: center;
+    color: #4d4f54 ;
+}
+h4 {
+    color: #4d4f54 ;
+
+}
+

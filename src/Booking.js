@@ -22,7 +22,7 @@ function Booking () {
         <div> 
         <section id ="bookNow">
             <div className="bookingContainer">
-                <h2>BOOK NOW</h2>
+                <h2 className="subHeader">BOOK NOW</h2>
                 </div>
                 <div className='formBox'>
     <h4>Please fill out the form and we will contact you within 24 hours </h4>
@@ -74,7 +74,7 @@ function Booking () {
          feedbackType="invalid" />
       </Form.Group>
 
-      <Button variant="success" type="submit">
+      <Button  variant="success" type="submit">
         Submit
       </Button>
     </Form>

@@ -5,11 +5,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function NavGrid() {
   return (
     <Navbar expand="lg" className="grid" sticky="top" data-bs-theme="light">
         <Container>
-          <Navbar.Brand className='logo' href="#home">Hospitality Career Coaching</Navbar.Brand>
+          <Navbar.Brand href="#home"><span className='logo'>Hospitality Career Coaching</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

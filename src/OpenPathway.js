@@ -1,15 +1,14 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
-import './PageOne.css';
-import iconOne from './pageImages/structure.png';
-import iconTwo from './pageImages/star.png';
+import './PageFour.css';
+import iconThree from './pageImages/open.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 
-function AllEncompassingPathway () {
+function OpenPathway () {
 
     useGSAP(() => {
         gsap.to (".bookBtn", {y: 10, ease:"bounce", repeat: -1, duration: 3});
@@ -36,35 +35,17 @@ function AllEncompassingPathway () {
     return(
         <div>
 
-            <div className="firstPageBox">
-            <h2 className="pageTitle">All Encompassing Pathway</h2>
+            <div className="forthPageBox">
+            <h2 className="pageTitle">Open Pathway</h2>
             <button className="back" onClick={() => navigate(-1)}>Go back</button>
         </div>
       <div className="cluster">
         <div data-aos="flip-left" data-aos-duration="2000" className="pageCardOne">
-            <div><img src ={iconOne} alt ="icon"></img></div>
+            <div className="bulb"><img src ={iconThree} alt ="icon"></img></div>
             <h3>Structure</h3>
             <ul>
                 <li>Launch of the journey online session</li>
-                <li>Crafting of a personalized career Strategy</li>
-                <li>6 sessions with a coach</li>
-                <li>Tools for success: Resume, LinkedIn, network</li>
-                <li>Interview preparation</li>
-                <li>Personal presentation</li>
-                <li>On-job support during first 3 months</li>
-            </ul>
-        </div>
-        
-        <div data-aos="flip-right" data-aos-duration="2000" className="pageCardTwo">
-            <div><img src ={iconTwo} alt ="icon"></img></div>
-            <h3>Results</h3>
-            <ul>
-                <li>Confidence</li>
-                <li>Integrated mind</li>
-                <li>Clarity of the pathway</li>
-                <li>Solid action plan</li>
-                <li>Full support from point A to the desired point B</li>
-                <li>Dream job landing</li>
+                <li>Crafting of a personalized career Strategy according to your Needs</li>
             </ul>
         </div>
         
@@ -72,10 +53,10 @@ function AllEncompassingPathway () {
 
         <div data-aos="zoom-in" className="pageText">
           
-            <h4>Are you burnt our with your Job Search?</h4>
+            <h4>Do you feel confused amidst your Career Path?</h4>
             <button className="bookBtn" onClick={navigateToBooking}>Book Now</button>
-            <p>🫶 We hear you! And we are there to elevate you to the best self!</p>
-                <p>✔️ This service is dedicated for those who are at the start of their career path and want to give it the right direction. </p>
+            <p>🫶 We are at your disposal! Our guidance will elevate you to the best self!</p>
+                <p>✔️ This service is dedicated for those who are experienced, however not fully satisfied where they are in their career and want to give it the right direction. </p>
                  <p>✔️ Equip yourself with the necessary knowledge and tools to establish an engaged, productive, and healthy workplace. </p>
                  <p>✔️ More than coaching, our virtual development paths address the important challenges faced by many candidates. </p>
                 <p>✔️ Our paths combine microlearnings and development activities based on the candodate’s experience and educational background.</p>
@@ -90,4 +71,4 @@ function AllEncompassingPathway () {
 
     )
 }
-export default AllEncompassingPathway;
+export default OpenPathway;

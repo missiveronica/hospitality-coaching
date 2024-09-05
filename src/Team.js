@@ -19,7 +19,7 @@ function Team () {
         <div>
             <section id ="team">
                 <div className="teamContainer">
-                    <h2>OUR TEAM</h2>
+                    <h2 className="subHeader">OUR TEAM</h2>
                 </div>
                 <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"

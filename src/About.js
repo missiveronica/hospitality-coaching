@@ -36,7 +36,7 @@ function About () {
         <div>
         <section id ="about">
             <div className="blockOne">
-            <h2>WHO WE ARE</h2>
+            <h2 className="subHeader">WHO WE ARE</h2>
             <div data-aos="fade-right"
             data-aos-duration="2000"
             data-aos-opacity="0">

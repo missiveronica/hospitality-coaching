@@ -7,6 +7,9 @@ BrowserRouter as Router,
   Route,
 } from "react-router-dom";
 import AllEncompassingPathway from './AllEncompassingPathway';
+import PathwayAlignment from './PathwayAlignment';
+import OneOfAKindPathway from './OneOfAKindPathway';
+import OpenPathway from './OpenPathway';
 
 
 
@@ -21,6 +24,10 @@ function App() {
       <Routes>
       <Route path ="/" element ={<Home/>}/>
       <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
+      <Route path = '/secondPage' element = {<PathwayAlignment/>}/>
+      <Route path = '/thirdPage' element = {<OneOfAKindPathway/>}/>
+      <Route path = '/forthPage' element = {<OpenPathway/>}/>
+
       </Routes>
       </Router>
     </div>
