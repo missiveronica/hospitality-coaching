@@ -66,7 +66,7 @@ const filteredAttributes = useMemo (
                   
                   <p>Being overwhelmed with the career path is natural. Especially when you are starting, changing or redirecting it. We have been there! The essential part of this journey is to feel supported to boost your motivation and confidence.</p>
                     <p>Here are Career Intelligence Attributes which are incorporated in our Career Pathway methology and will help you to thrive.</p> 
-                  <input className='inputBox' placeholder ="Type any 1 letter coming to your mind now..."  type ="text" onChange={handleText}/>
+                  <input className='inputBox' placeholder ="Type 1 letter coming to your mind now..."  type ="text" onChange={handleText}/>
                   <button className='searchBtn' onClick={handleSearch}>Search your Attribute</button>
                   
                   <div className='box'>
