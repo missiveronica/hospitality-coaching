@@ -65,7 +65,7 @@ function About () {
      </div>
         </div>
 
-        <div>
+        <div className="aboutHeader">
      <h4>Landing your Dreamjob couldn't be easier with our support! Which type of property are you up to?</h4>
      </div>
      <div className="slideBox">

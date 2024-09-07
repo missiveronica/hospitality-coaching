@@ -186,7 +186,7 @@ width: 100px;
     font-family: "Montserrat", system-ui;
     padding: 30px;
 }
-h3 {
+h3, h4 {
     font-family: "Montserrat", system-ui;
 }
 .slideText {
@@ -200,7 +200,10 @@ h3 {
     font-size: 30px;
     font-weight: bold;
 }
-
+.aboutHeader {
+    display: flex;
+    padding: 20px;
+}
 @media all and (max-width: 500px) {
 
     .slideFrame {

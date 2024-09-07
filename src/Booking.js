@@ -60,6 +60,7 @@ function Booking () {
         </Form.Group>
       </Row>
 
+
       <Form.Group className="mb-3" controlId="formGridAddress1">
         <Form.Label>Comments</Form.Label>
         <Form.Control placeholder="Insert your comments" />
