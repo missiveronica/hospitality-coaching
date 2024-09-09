@@ -80,7 +80,7 @@ font-family: "Montserrat", system-ui;
     width: 1000px;
 }
 .teamContainer {
-    background-image: url(sectionImages/team.jpg);
+    background-image: url(Assets/sectionImages/team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 250px;
@@ -88,7 +88,7 @@ font-family: "Montserrat", system-ui;
 
 }
 .serviceContainer {
-    background-image: url(sectionImages/mountains.jpg);
+    background-image: url(Assets/sectionImages/mountains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +99,7 @@ font-family: "Montserrat", system-ui;
 
 }
 .bookingContainer {
-    background-image: url(sectionImages/contact.jpg);
+    background-image: url(Assets/sectionImages/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

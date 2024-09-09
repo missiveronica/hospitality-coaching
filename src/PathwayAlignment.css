@@ -2,7 +2,7 @@ body {
     background: #f3f2f0;
 }
 .secondPageBox {
-    background-image: url(CardPictures/pathway.jpg);
+    background-image: url(Assets/CardPictures/pathway.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

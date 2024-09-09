@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import image from './bell.png';
+import image from './Assets/bell.png';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Card from 'react-bootstrap/Card';

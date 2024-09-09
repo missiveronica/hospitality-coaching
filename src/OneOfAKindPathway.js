@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
-import './PageThree.css';
-import iconOne from './pageImages/structure.png';
-import iconTwo from './pageImages/star.png';
+import './OneOfAKindPathway.css';
+import iconOne from './Assets/pageImages/structure.png';
+import iconTwo from './Assets/pageImages/star.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from "gsap";

@@ -23,10 +23,10 @@ function App() {
       <Router>
       <Routes>
       <Route path ="/" element ={<Home/>}/>
-      <Route path = '/firstPage' element = {<AllEncompassingPathway/>}/>
-      <Route path = '/secondPage' element = {<PathwayAlignment/>}/>
-      <Route path = '/thirdPage' element = {<OneOfAKindPathway/>}/>
-      <Route path = '/forthPage' element = {<OpenPathway/>}/>
+      <Route path = '/AllEncompassingPathwayPage' element = {<AllEncompassingPathway/>}/>
+      <Route path = '/PathwayAlignmentPage' element = {<PathwayAlignment/>}/>
+      <Route path = '/OneOfAKindPathwayPage' element = {<OneOfAKindPathway/>}/>
+      <Route path = '/OpenPathwayPage' element = {<OpenPathway/>}/>
 
       </Routes>
       </Router>

@@ -3,10 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import imageOne from './TeamPictures/employeeOne.jpg';
-import imageTwo from './TeamPictures/employeeTwo.avif';
-import imageThree from './TeamPictures/employeeThree.avif';
-import linkedIn from './TeamPictures/linkedin.png';
+import imageOne from './Assets/TeamPictures/employeeOne.jpg';
+import imageTwo from './Assets/TeamPictures/employeeTwo.avif';
+import imageThree from './Assets/TeamPictures/employeeThree.avif';
+import linkedIn from './Assets/TeamPictures/linkedin.png';
 
 function Team () {
 

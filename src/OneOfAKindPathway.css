@@ -1,8 +1,8 @@
 body {
     background: #f3f2f0;
 }
-.forthPageBox {
-    background-image: url(CardPictures/grass.avif);
+.thirdPageBox {
+    background-image: url(Assets/CardPictures/tree.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,7 +66,3 @@ h4 {
 
 }
 
-.bulb {
-    display: flex;
-    padding: 20px;
-}
