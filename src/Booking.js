@@ -4,6 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import AllCategories from './BookingComponents/Filter/AllCategories';
+import Cart from './BookingComponents/Cart/Cart';
+import ServiceTypes from './BookingComponents/ServiceTypes/ServicesTypes';
 
 function Booking () {
   const [validated, setValidated] = useState(false);
@@ -24,6 +27,21 @@ function Booking () {
             <div className="bookingContainer">
                 <h2 className="subHeader">BOOK NOW</h2>
                 </div>
+
+                <div className="AddBookingCart">
+            <div className='window'>
+              <AllCategories/>
+              <Cart/>
+            </div>
+            <div className='window'>
+              <ServiceTypes/> 
+            </div>
+
+          </div>
+
+
+
+
                 <div className='formBox'>
     <h4>Please fill out the form and we will contact you within 24 hours </h4>
                 </div>

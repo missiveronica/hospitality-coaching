@@ -204,6 +204,18 @@ h3, h4 {
     display: flex;
     padding: 20px;
 }
+.AddBookingCart {
+    display: flex;
+    justify-content: space-between;
+}
+.window {
+
+        background-color: rgba(255, 255, 255, 0.5);
+      
+        padding: 20px;
+      
+      } 
+
 @media all and (max-width: 500px) {
 
     .slideFrame {
