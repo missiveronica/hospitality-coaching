@@ -206,15 +206,60 @@ h3, h4 {
 }
 .AddBookingCart {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .window {
 
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 246, 143, 0.5);
       
         padding: 20px;
       
       } 
+.serviceName {
+    font-weight: bold;
+}
+.add {
+    padding: 10px;
+    border-radius: 7px;
+    background: #C1CFA1;
+    box-shadow: inset 19px 19px 38px #aab68e,
+                inset -19px -19px 38px #d8e8b4;
+   
+    color: #3C3D37;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+}
+.badgeCount {
+    color: #F5F5F5;
+    padding: 0 5px;
+    background-color: #FF7777;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+    right: -70px;
+    width: 30px;
+}
+.categoryButtonSelected {
+    background-color: rgba(255, 176, 176, 0.5);
+}
+.categoryButton {
+cursor: pointer;
+margin: 5px;
+padding: 5px;
+}
+.quantityChange {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.number {
+    color: #5f6063;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 @media all and (max-width: 500px) {
 

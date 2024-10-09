@@ -24,9 +24,9 @@ function About () {
 
     }, [])
     const getQuote  = async() => {
-        const response = await fetch (`https://api.quotable.io/random`);
+        const response = await fetch (`https://quotes-api-self.vercel.app/quote`);
         const data = await response.json();
-        setQuote(data.content)
+        setQuote(data.quote)
     }
 
     useGSAP(() => {
