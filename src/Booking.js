@@ -7,8 +7,17 @@ import Row from 'react-bootstrap/Row';
 import AllCategories from './BookingComponents/Filter/AllCategories';
 import Cart from './BookingComponents/Cart/Cart';
 import ServiceTypes from './BookingComponents/ServiceTypes/ServicesTypes';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function Booking () {
+
+  useGSAP(() => {
+    gsap.to (".questionMark", {y: 10, ease:"bounce", repeat: -1, duration: 3});
+    gsap.to (".shoppingBag", {rotation: 20, repeat:-1, duration: 3})
+
+});
+
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -43,7 +52,11 @@ function Booking () {
 
 
                 <div className='formBox'>
-    <h4>Please fill out the form and we will contact you within 24 hours </h4>
+                  <div className='question'>
+                  <img className='questionMark' src = "https://img.icons8.com/?size=100&id=42216&format=png&color=000000" alt="questionmark" width="70px"/>
+                <h4>Any questions?</h4>
+  </div>
+     <h4>Please fill out the form and we will contact you within 24 hours </h4>
                 </div>
 <div className='formFrame'>
 <Form noValidate validated={validated} onSubmit={handleSubmit}>

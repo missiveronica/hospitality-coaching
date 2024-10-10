@@ -54,7 +54,7 @@ function About () {
     </div>
         <div className="qB">
         <Card className="quote">
-      <Card.Header>Quote of the Day</Card.Header>
+      <Card.Header>📖 Quote of the Day</Card.Header>
       <Card.Body>
         <blockquote className="blockquote mb-0">
         <p>"{quote}"</p> 
