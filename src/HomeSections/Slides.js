@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import resort from './Assets/hotelPics/resort.jpg';
-import cityhotel from './Assets/hotelPics/cityhotel.jpg';
-import historichotel from './Assets/hotelPics/historichotel.jpg';
-import lifestylehotel from './Assets/hotelPics/lifestyle.avif';
+import resort from '../Assets/hotelPics/resort.jpg';
+import cityhotel from '../Assets/hotelPics/cityhotel.jpg';
+import historichotel from '../Assets/hotelPics/historichotel.jpg';
+import lifestylehotel from '../Assets/hotelPics/lifestyle.avif';
 
 
 function Slides() {

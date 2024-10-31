@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import './AllEncompassingPathway.css';
-import iconOne from './Assets/pageImages/structure.png';
-import iconTwo from './Assets/pageImages/star.png';
+import iconOne from '../Assets/pageImages/structure.png';
+import iconTwo from '../Assets/pageImages/star.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from "gsap";
@@ -42,7 +42,7 @@ function AllEncompassingPathway () {
         </div>
       <div className="cluster">
         <div data-aos="flip-left" data-aos-duration="2000" className="pageCardOne">
-            <div><img src ={iconOne} alt ="icon"></img></div>
+            <img src ={iconOne} alt ="icon"></img>
             <h3>Structure</h3>
             <ul>
                 <li>Launch of the journey online session</li>
@@ -55,8 +55,8 @@ function AllEncompassingPathway () {
             </ul>
         </div>
         
-        <div data-aos="flip-right" data-aos-duration="2000" className="pageCardTwo">
-            <div><img src ={iconTwo} alt ="icon"></img></div>
+        <div data-aos="flip-right" data-aos-duration="2000" className="pageCardOne">
+            <img src ={iconTwo} alt ="icon"></img>
             <h3>Results</h3>
             <ul>
                 <li>Confidence</li>

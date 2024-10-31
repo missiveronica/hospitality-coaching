@@ -12,8 +12,8 @@ const ServiceTypes = () => {
                 if (selectedCategory === "ALL") return true;
                 return selectedCategory === service.category;
             })
-            .map(service => 
-                <ServiceType service = {service}/>
+            .map((service, index) => 
+                <ServiceType key = {index} service = {service}/>
             )}
         </div>
     )

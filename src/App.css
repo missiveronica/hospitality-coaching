@@ -13,10 +13,6 @@ video {
     left:0;
     z-index: -1;
 }
-.center {
-    display: flex;
-    justify-content: center;
-}
 .header {
 color: white;
 position: absolute;

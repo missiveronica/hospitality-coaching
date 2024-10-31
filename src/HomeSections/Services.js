@@ -5,10 +5,10 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import pictureOne from './Assets/CardPictures/compass.jpg';
-import pictureTwo from './Assets/CardPictures/pathway.jpg';
-import pictureThree from './Assets/CardPictures/tree.jpg';
-import pictureFour from './Assets/CardPictures/grass.avif';
+import pictureOne from '../Assets/CardPictures/compass.jpg';
+import pictureTwo from '../Assets/CardPictures/pathway.jpg';
+import pictureThree from '../Assets/CardPictures/tree.jpg';
+import pictureFour from '../Assets/CardPictures/grass.avif';
 import { attributes } from './attributes';
 
 
@@ -29,7 +29,6 @@ const filteredAttributes = useMemo (
   }),[search])  
 
     return(
-        <div>
             <section id ="services">
                 <div className="serviceContainer">
                     <h2 className="subHeader">YOUR JOURNEY WITH US</h2>
@@ -57,7 +56,7 @@ const filteredAttributes = useMemo (
       <Card className="bg-dark text-white">
         <Card.Img variant="top" src={pictureOne} alt="cardImage"/>
         <Card.ImgOverlay>
-        <Link className='cardTitle' to = '/AllEncompassingPathwayPage'>
+        <Link className='cardTitle' to = '/pathway/all-encompassing'>
         <Card.Title>All-Encompassing Pathway</Card.Title> 
         </Link>
         </Card.ImgOverlay>
@@ -75,7 +74,7 @@ const filteredAttributes = useMemo (
       <Card className="bg-dark text-white">
         <Card.Img variant="top" src={pictureTwo} alt="cardImage"/>
         <Card.ImgOverlay>
-        <Link className='cardTitle' to = '/PathwayAlignmentPage'>
+        <Link className='cardTitle' to = '/pathway/alignment'>
         <Card.Title>Pathway Alignment</Card.Title> 
         </Link>
         </Card.ImgOverlay>
@@ -92,7 +91,7 @@ const filteredAttributes = useMemo (
         <Card.Img variant="top" src={pictureThree} alt="cardImage"/>
 
         <Card.ImgOverlay>
-        <Link className='cardTitle' to = '/OneOfAKindPathwayPage'>
+        <Link className='cardTitle' to = '/pathway/one-of-a-kind'>
         <Card.Title>One Of A Kind Pathway</Card.Title> 
         </Link>
         </Card.ImgOverlay>
@@ -108,7 +107,7 @@ const filteredAttributes = useMemo (
       <Card className="bg-dark text-white">
         <Card.Img variant="top" src={pictureFour} alt="cardImage"/>
         <Card.ImgOverlay>
-        <Link className='cardTitle' to = '/OpenPathwayPage'>
+        <Link className='cardTitle' to = '/pathway/open'>
         <Card.Title>Open Pathway</Card.Title> 
         </Link>
         </Card.ImgOverlay>
@@ -123,10 +122,8 @@ const filteredAttributes = useMemo (
       </Card>
     </CardGroup>
     </div>
+    <hr className="rounded"></hr>
                 </section>
-                <hr className="rounded"></hr>
-
-        </div>
     )
 }
 export default Services;

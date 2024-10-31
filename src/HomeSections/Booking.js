@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import AllCategories from './BookingComponents/Filter/AllCategories';
-import Cart from './BookingComponents/Cart/Cart';
-import ServiceTypes from './BookingComponents/ServiceTypes/ServicesTypes';
+import AllCategories from '../BookingComponents/Filter/AllCategories';
+import Cart from '../BookingComponents/Cart/Cart';
+import ServiceTypes from '../BookingComponents/ServiceTypes/ServicesTypes';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -31,7 +31,6 @@ function Booking () {
   };
 
     return (
-        <div> 
         <section id ="bookNow">
             <div className="bookingContainer">
                 <h2 className="subHeader">BOOK NOW</h2>
@@ -114,8 +113,6 @@ function Booking () {
 
 
          </section>
-
-         </div>
 
     )
 }

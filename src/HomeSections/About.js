@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import image from './Assets/bell.png';
+import image from '../Assets/bell.png';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Card from 'react-bootstrap/Card';
@@ -33,7 +33,7 @@ function About () {
         gsap.to (".bell", {rotation: 20, repeat:-1, duration: 3})
     });
     return (
-        <div>
+  
         <section id ="about">
             <div className="blockOne">
             <h2 className="subHeader">WHO WE ARE</h2>
@@ -72,13 +72,12 @@ function About () {
 <Slides/>
      </div>
 
-
+     <hr className="rounded"></hr>
         </section>
       
-        
-        <hr className="rounded"></hr>
       
-        </div>
+      
+      
 
     )
 }

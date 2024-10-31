@@ -3,10 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import imageOne from './Assets/TeamPictures/employeeOne.jpg';
-import imageTwo from './Assets/TeamPictures/employeeTwo.avif';
-import imageThree from './Assets/TeamPictures/employeeThree.avif';
-import linkedIn from './Assets/TeamPictures/linkedin.png';
+import imageOne from '../Assets/TeamPictures/employeeOne.jpg';
+import imageTwo from '../Assets/TeamPictures/employeeTwo.avif';
+import imageThree from '../Assets/TeamPictures/employeeThree.avif';
+import linkedIn from '../Assets/TeamPictures/linkedin.png';
 
 function Team () {
 
@@ -16,7 +16,6 @@ function Team () {
 
 
     return(
-        <div>
             <section id ="team">
                 <div className="teamContainer">
                     <h2 className="subHeader">OUR TEAM</h2>
@@ -68,12 +67,9 @@ function Team () {
     </Card>
                     </div>
                 </div>
-
+                <hr className="rounded"></hr>
             </section>
-            <hr className="rounded"></hr>
-
-
-        </div>
+          
     )
 }
 export default Team;

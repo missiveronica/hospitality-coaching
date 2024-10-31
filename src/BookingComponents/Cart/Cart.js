@@ -14,8 +14,8 @@ const Cart = () => {
         </div>
         <div className="badgeCount">{totalQuantity}</div>
         </div>
-        {cartItems.map(cartItem => 
-        <CartItem cartItem = {cartItem}/>
+        {cartItems.map((cartItem, index) => 
+        <CartItem key = {index} cartItem = {cartItem}/>
              )}
              <h4>TOTAL: $ {totalPrice}</h4>
         </div>

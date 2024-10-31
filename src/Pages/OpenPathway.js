@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import './OpenPathway.css';
-import iconThree from './Assets/pageImages/open.png';
+import iconThree from '../Assets/pageImages/open.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import gsap from "gsap";

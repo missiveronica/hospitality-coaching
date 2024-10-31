@@ -1,8 +1,8 @@
 body {
     background: #f3f2f0;
 }
-.forthPageBox {
-    background-image: url(Assets/CardPictures/grass.avif);
+.firstPageBox {
+    background-image: url(../Assets/CardPictures/compass.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,6 +13,7 @@ body {
     color: #fad149;
     font-weight: bolder;
     padding: 20px;
+   
 }
 .back {
     background-color:#fad149;
@@ -25,13 +26,14 @@ body {
 .back:hover {
     opacity: 0.8;
 }
-.pageCardOne, .pageCardTwo {
+.pageCardOne {
     padding: 20px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #4d4f54 ;
+    font-family: "Montserrat", system-ui;
 }
 
 .cluster {
@@ -46,6 +48,7 @@ body {
     margin: 15px;
     color: #4d4f54;
     font-weight: bold;
+    font-family: "Montserrat", system-ui;
 
 }
 .bookBtn:hover {
@@ -56,6 +59,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Montserrat", system-ui;
 }
 p {
     text-align: center;
@@ -66,7 +70,3 @@ h4 {
 
 }
 
-.bulb {
-    display: flex;
-    padding: 20px;
-}
